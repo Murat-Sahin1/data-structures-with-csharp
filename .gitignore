@@ -1,0 +1,27 @@
+# Compiled files
+/bin/
+/obj/
+
+# NuGet packages
+/packages/
+
+# Visual Studio files
+*.suo
+*.user
+*.sln.docstates
+*.vs/
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+
+# Resharper files
+_ReSharper*/
+
+# Visual Studio code coverage results
+*.opencover
+*.coverage
+*.dotcover
+
+# Build output
+[Bb]uild/
