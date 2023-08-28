@@ -15,8 +15,8 @@ namespace data_structures.Dynamic_Array
 
         public DynamicArray()
         {
-            staticArr = new T[16];
             capacity = 16;
+            staticArr = new T[capacity];
         }
 
         public DynamicArray(int capacity)
@@ -56,18 +56,21 @@ namespace data_structures.Dynamic_Array
 
                 T[] tempArr = new T[capacity];
 
-                for (int i = 0; i < capacity; i++)
+                for (int i = 0; i < length; i++)
                 {
                     tempArr[i] = staticArr[i];
                 }
                 staticArr = tempArr;
+                Console.WriteLine("Created a new array.");
             }
-            staticArr[length++] = item;
+            Console.WriteLine(length);
+            staticArr[length] = item;
+            length++;
         }
 
-        public Boolean RemoveAt(int remove_index)
+        public bool RemoveAt(int remove_index)
         {
-            if (remove_index > length || remove_index < length) throw new ArgumentOutOfRangeException();
+            if (remove_index >= length || remove_index < 0) throw new ArgumentOutOfRangeException();
             T[] tempArr = new T[length-1];
 
             for(int i=0, j=0; i < length; i++, j++)

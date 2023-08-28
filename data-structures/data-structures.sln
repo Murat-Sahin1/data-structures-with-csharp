@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "data-structures", "data-structures.csproj", "{CE8E5190-0941-474D-B27D-83592E75AD00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "data-structures", "data-structures.csproj", "{CE8E5190-0941-474D-B27D-83592E75AD00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "data-structures-console-app", "..\data-structures-console-app\data-structures-console-app.csproj", "{734F561D-F1B6-4278-9460-E6557AC4B571}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CE8E5190-0941-474D-B27D-83592E75AD00} = {CE8E5190-0941-474D-B27D-83592E75AD00}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +20,10 @@ Global
 		{CE8E5190-0941-474D-B27D-83592E75AD00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE8E5190-0941-474D-B27D-83592E75AD00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE8E5190-0941-474D-B27D-83592E75AD00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{734F561D-F1B6-4278-9460-E6557AC4B571}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{734F561D-F1B6-4278-9460-E6557AC4B571}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{734F561D-F1B6-4278-9460-E6557AC4B571}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{734F561D-F1B6-4278-9460-E6557AC4B571}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
